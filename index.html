@@ -11,6 +11,11 @@
             line-height: 1.6;
             color: #333;
             background-color: #AEC6CF;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centra horizontalmente */
+            justify-content: center; /* Centra verticalmente */
+            height: 100vh; /* Ajusta la altura al 100% de la ventana */
         }
 
         header {
@@ -29,11 +34,14 @@
 
         p {
             color: #666;
+            text-align: center; /* Centra el texto en las secciones */
         }
 
         section {
             margin-bottom: 40px;
             position: relative;
+            width: 80%; /* Ancho del contenido de la sección */
+            max-width: 600px; /* Ancho máximo del contenido de la sección */
         }
 
         .accordion-content {
@@ -48,7 +56,7 @@
         }
 
         .accordion-content img {
-            max-width: 10%;
+            max-width: 100%;
             height: auto;
             margin-top: 10px;
         }
@@ -67,6 +75,7 @@
             <p>
                 Soy un apasionado creador web sin código. Mi misión es transformar ideas en experiencias digitales cautivadoras, destacando la innovación y el diseño vanguardista.
             </p>
+            <img src="ruta/a/tu/imagen.jpg" alt="Descripción de la imagen">
         </div>
     </section>
 
@@ -79,7 +88,7 @@
                 <li>Experiencia de usuario (UX)</li>
                 <li>Colaboración en equipo</li>
             </ul>
-            <img src= https://images.unsplash.com/photo-1603219527847-24c87f552a77?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D alt="Descripción de la imagen de habilidades">
+            <img src="ruta/a/tu/otra-imagen.jpg" alt="Descripción de la imagen de habilidades">
         </div>
     </section>
 
