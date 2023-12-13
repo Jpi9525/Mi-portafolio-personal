@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Pablo Salas - Portafolio</title>
+    <style>
+        /* Estilos del código anterior... */
+
+        .accordion-section {
+            cursor: pointer;
+        }
+
+        .accordion-content {
+            display: none;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Juan Pablo Salas</h1>
+        <p>Creador web sin código</p>
+    </header>
+
+    <div class="accordion-section" onclick="toggleSection('biografia')">
+        <h2>Biografía</h2>
+        <div class="accordion-content" id="biografia-content">
+            <p>
+                Soy un apasionado creador web sin código. Mi misión es transformar ideas en experiencias digitales cautivadoras, destacando la innovación y el diseño vanguardista.
+            </p>
+        </div>
+    </div>
+
+    <div class="accordion-section" onclick="toggleSection('habilidades')">
+        <h2>Habilidades</h2>
+        <div class="accordion-content" id="habilidades-content">
+            <ul>
+                <li>Diseño web sin código</li>
+                <li>Desarrollo web frontend</li>
+                <li>Experiencia de usuario (UX)</li>
+                <li>Colaboración en equipo</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Agrega más secciones según sea necesario -->
+
+    <script>
+        function toggleSection(sectionId) {
+            const content = document.getElementById(sectionId + '-content');
+            content.style.display = (content.style.display === 'none' || content.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+
+</body>
+</html>
