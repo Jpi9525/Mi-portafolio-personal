@@ -33,16 +33,24 @@
 
         section {
             margin-bottom: 40px;
+            position: relative;
         }
 
         .accordion-content {
-            display: none;
             padding: 10px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
         }
 
-        img {
-            max-width: 100%;
+        .accordion-content p {
+            flex: 1;
+        }
+
+        .accordion-content img {
+            max-width: 10%;
             height: auto;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -59,7 +67,6 @@
             <p>
                 Soy un apasionado creador web sin código. Mi misión es transformar ideas en experiencias digitales cautivadoras, destacando la innovación y el diseño vanguardista.
             </p>
-            <img https://images.unsplash.com/photo-1603219527847-24c87f552a77?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D alt= margin: 10px;>
         </div>
     </section>
 
@@ -72,9 +79,9 @@
                 <li>Experiencia de usuario (UX)</li>
                 <li>Colaboración en equipo</li>
             </ul>
+            <img src= https://images.unsplash.com/photo-1603219527847-24c87f552a77?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D alt="Descripción de la imagen de habilidades">
         </div>
     </section>
-    <!-- Agrega más secciones según sea necesario -->
 
     <script>
         function toggleSection(sectionId) {
